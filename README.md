@@ -26,7 +26,7 @@ After installing Docker, you can use the existing official [NGINX image](https:/
   - `$ docker run --name <container_name> -p 1111:80 -d <image_name>`
     - `docker run` is the command used for running a container from an image
     - `--name <container_name>` gives the new container a name of your choosing. Omitting this auto-generates a name
-    - `-p 80:80` maps the port of the host machine to the container (general form is `-p host-port:container-port`)
+    - `-p 1111:80` maps the port of the host machine to the container (general form is `-p host-port:container-port`)
     - `-d` indicates that this container will run in detached mode. This just means it will run in the background
     - `<image_name>` refers to the image build earlier. This just tells Docker which image to use to run this container from
 - At this point, the image should be up and running. You can verify this in one of two ways:
